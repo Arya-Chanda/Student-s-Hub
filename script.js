@@ -95,7 +95,7 @@ function selectAnswer(selectedOption) {
     const question = quizQuestions[currentQuestionIndex];
     const quizResult = document.getElementById('quizResult');
 
-    if (selectedOption === question.answer) {
+    if (selectedOption == question.answer) {
         quizResult.innerText = "Correct!";
         score++; // Increment score for correct answer
     } else {
